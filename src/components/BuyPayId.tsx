@@ -65,19 +65,19 @@ const BuyPayId = ({
             <h3 className="text-lg font-bold">Service Notice</h3>
           </div>
           <Button onClick={handleServiceNoticeClose} className="bg-transparent p-1">
-            <X className="w-5 h-5 text-gray-500" />
+            <X className="w-5 h-5 text-red-500" />
           </Button>
         </div>
         
-        <div className="border-l-4 border-green-400 p-4 mb-4 bg-green-50">
+        <div className="border-l-4 border-green-400 p-4 mb-4 bg-red-50">
           <div className="flex items-center space-x-2 mb-2">
-            <span className="text-green-600">✓</span>
-            <h4 className="font-bold text-green-600">Opay Bank Service is Working Perfectly</h4>
+            <span className="text-red-600">✓</span>
+            <h4 className="font-bold text-red-600">Opay Bank Service is down</h4>
           </div>
-          <p className="text-sm text-green-600">All Opay bank transfers are now working normally. You can proceed with your payment safely.</p>
+          <p className="text-sm text-red-600">All bank transfers are now working normally. You can proceed with your payment safely.</p>
         </div>
         
-        <p className="text-gray-600 text-sm mb-6">We appreciate your patience. All banks including Opay are now working normally and your payment will be processed immediately.</p>
+        <p className="text-gray-600 text-sm mb-6">We appreciate your patience. All banks are now working normally and your payment will be processed immediately.</p>
         
         <Button onClick={handleServiceNoticeClose} className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg">
           I Understand
@@ -91,7 +91,7 @@ const BuyPayId = ({
             <div className="space-y-2">
               <label className="text-gray-700 font-medium">Amount</label>
               <div className="bg-gray-100 p-4 rounded-lg">
-                <span className="text-2xl font-bold">₦6,500</span>
+                <span className="text-2xl font-bold">₦7,250</span>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ const BuyPayId = ({
             <div className="p-6 space-y-6">
               <div className="text-center bg-amber-400">
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">Complete Payment</h2>
-                <p className="text-gray-600 text-sm">Transfer ₦6,500 to the account below</p>
+                <p className="text-gray-600 text-sm">Transfer ₦7,250 to the account below</p>
               </div>
 
               {/* Email Section */}
@@ -161,14 +161,14 @@ const BuyPayId = ({
 
                 <div className="flex items-center justify-between py-4 border-b border-gray-200">
                   <span className="text-gray-700 font-medium">Bank Name</span>
-                  <span className="text-xl font-bold text-gray-900">MONIEPOINT MFB</span>
+                  <span className="text-xl font-bold text-gray-900">OPAY</span>
                 </div>
 
                 <div className="flex items-center justify-between py-4 border-b border-gray-200">
                   <span className="text-gray-700 font-medium">Account Number</span>
                   <div className="flex items-center space-x-3">
-                    <span className="text-xl font-bold text-gray-900">5082123633</span>
-                    <Button onClick={() => handleCopy('5082123633')} className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 text-sm rounded-md">
+                    <span className="text-xl font-bold text-gray-900">8154660613</span>
+                    <Button onClick={() => handleCopy('8154660613')} className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 text-sm rounded-md">
                       Copy
                     </Button>
                   </div>
@@ -176,7 +176,7 @@ const BuyPayId = ({
 
                 <div className="flex items-center justify-between py-4 border-b border-gray-200">
                   <span className="text-gray-700 font-medium">Account Name</span>
-                  <span className="text-xl font-bold text-gray-900">CHIMEZIE AKAH</span>
+                  <span className="text-xl font-bold text-gray-900">Akingboju juwon</span>
                 </div>
               </div>
 
